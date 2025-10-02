@@ -1,0 +1,21 @@
+[project]
+name = "treeson"
+version = "0.1.1"
+description = "Converte diretórios locais ou repositórios GitHub em JSON"
+authors = [
+    { name = "Sergio Bonatto", email = "seu.email@example.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.scripts]
+treeson = "treeson.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
